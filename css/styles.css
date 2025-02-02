@@ -1,0 +1,16 @@
+body {
+  font-family: 'Roboto' sans-serif;
+  font-style: normal;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style: none;
+}
