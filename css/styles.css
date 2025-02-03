@@ -1,16 +1,115 @@
+:root {
+  --primary-color: #434455;
+  --secondary-color: #ffffff;
+  --button-color: #4d5ae5;
+  --hover-color: #404bbf;
+}
+
 body {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-style: normal;
+  color: var(--primary-color);
 }
 
 .logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
   text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.logo-span {
+  color: var(--hover-color);
 }
 
 .nav a {
   text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .nav ul {
   list-style: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: tomato;
+}
+
+.address a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.address ul {
+  list-style: none;
+}
+
+.button {
+  background-color: var(--button-color);
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.1;
+}
+
+.goals {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.goals-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.doing ul {
+  list-style: none;
+}
+
+.doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.team ul {
+  list-style: none;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
 }
