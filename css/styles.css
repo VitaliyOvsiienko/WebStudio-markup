@@ -1,16 +1,25 @@
+/* Variables */
+
 :root {
   --primary-color: #434455;
   --secondary-color: #ffffff;
   --button-color: #4d5ae5;
   --hover-color: #404bbf;
+  --bcg-color: #f4f4fd;
+  --bcg-color-btn-portfolio: #e7e9fc;
+  --bcg-color-btn-portfolio-hover: #404bbf;
+  --portfolio-title-color: #2e2f42;
 }
 
+/* Body */
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--primary-color);
 }
+
+/* Logo */
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -24,6 +33,8 @@ body {
 .logo-span {
   color: var(--hover-color);
 }
+
+/* Navigation */
 
 .nav a {
   text-decoration: none;
@@ -39,8 +50,10 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: tomato;
+  color: var(--hover-color);
 }
+
+/* Address */
 
 .address a {
   text-decoration: none;
@@ -49,16 +62,29 @@ body {
   line-height: 1.5;
 }
 
+.address a:hover {
+  color: var(--hover-color);
+}
+
 .address ul {
   list-style: none;
 }
 
-.button {
+/* Hero */
+
+.hero-btn {
   background-color: var(--button-color);
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--secondary-color);
+  color: var(--button-color);
 }
 
 .hero {
@@ -66,6 +92,8 @@ body {
   font-size: 56px;
   line-height: 1.1;
 }
+
+/* Goals */
 
 .goals {
   font-weight: 500;
@@ -88,8 +116,11 @@ body {
   line-height: 1.1;
 }
 
+/* Team */
+
 .team ul {
   list-style: none;
+  background-color: var(--bcg-color);
 }
 
 .team-title {
@@ -108,6 +139,50 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+
+/* Portfolio Buttons */
+
+.btn-list {
+  list-style: none;
+}
+
+.btn-item {
+  background-color: var(--bcg-color-btn-portfolio);
+  color: var(--button-color);
+  cursor: pointer;
+}
+
+.btn-item:hover,
+.btn-item:focus {
+  background-color: var(--bcg-color-btn-portfolio-hover);
+  color: var(--secondary-color);
+}
+
+/* Cards */
+
+.cards-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cards-list {
+  list-style: none;
+}
+
+.cards-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--portfolio-title-color);
+}
+
+.cards-text {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+
+/* Footer */
 
 .footer-text {
   font-size: 16px;
