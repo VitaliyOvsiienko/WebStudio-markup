@@ -5,10 +5,30 @@
   --secondary-color: #ffffff;
   --button-color: #4d5ae5;
   --hover-color: #404bbf;
-  --bcg-color: #f4f4fd;
-  --bcg-color-btn-portfolio: #e7e9fc;
-  --bcg-color-btn-portfolio-hover: #404bbf;
+  --bg-color: #f4f4fd;
+  --bg-color-btn-portfolio: #e7e9fc;
+  --bg-color-btn-portfolio-hover: #404bbf;
   --portfolio-title-color: #2e2f42;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 /* Body */
@@ -19,9 +39,18 @@ body {
   color: var(--primary-color);
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
 /* Logo */
 
 .logo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 40px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   text-decoration: none;
@@ -36,16 +65,40 @@ body {
 
 /* Navigation */
 
-.nav a {
+.nav-list {
+  display: flex;
+  /* list-style: none; */
+  margin-left: 70px;
+}
+
+/* .nav-item {
+  outline: 1px solid red;
+  margin-right: 40px;
+  background-color: aqua;
+} */
+
+/* .nav-item:last-child {
+  margin-right: 0;
+} */
+
+.nav-item + .nav-item {
+  margin-left: 40px;
+}
+
+/* .nav-item:not(:last-child) {
+  margin-right: 0;
+} */
+
+.nav-link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   text-decoration: none;
   color: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.nav ul {
-  list-style: none;
 }
 
 .nav-link:hover,
@@ -54,23 +107,64 @@ body {
 }
 
 /* Address */
+.address {
+  display: flex;
+  width: 100%;
+}
 
-.address a {
+.address-list {
+  display: flex;
+  /* padding-left: 0; */
+  margin-left: auto;
+  /* list-style: none; */
+}
+
+/* .address-item {
+  background-color: aquamarine;
+  outline: 1px solid tomato;
+} */
+
+.address-item {
+  margin-left: auto;
+}
+
+.address-item + .address-item {
+  margin-left: 40px;
+}
+
+.address-link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   text-decoration: none;
   color: inherit;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.address a:hover {
+.address-link:hover {
   color: var(--hover-color);
 }
 
-.address ul {
-  list-style: none;
+/* Hero */
+
+.hero {
+  text-align: center;
+  background-color: var(--portfolio-title-color);
+  height: 300px;
+  padding-top: 60px;
 }
 
-/* Hero */
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.1;
+
+  margin-bottom: 40px;
+
+  color: var(--secondary-color);
+}
 
 .hero-btn {
   background-color: var(--button-color);
@@ -79,6 +173,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   cursor: pointer;
+  min-width: 130px;
+  padding: 11px 34px;
 }
 
 .hero-btn:hover,
@@ -87,15 +183,21 @@ body {
   color: var(--button-color);
 }
 
-.hero {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.1;
-}
-
 /* Goals */
 
-.goals {
+.goals-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: aquamarine;
+}
+
+.goals-item {
+  background-color: blueviolet;
+  width: 25%;
+}
+
+.goals-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -120,7 +222,7 @@ body {
 
 .team ul {
   list-style: none;
-  background-color: var(--bcg-color);
+  background-color: var(--bg-color);
 }
 
 .team-title {
@@ -147,14 +249,14 @@ body {
 }
 
 .btn-item {
-  background-color: var(--bcg-color-btn-portfolio);
+  background-color: var(--bg-color-btn-portfolio);
   color: var(--button-color);
   cursor: pointer;
 }
 
 .btn-item:hover,
 .btn-item:focus {
-  background-color: var(--bcg-color-btn-portfolio-hover);
+  background-color: var(--bg-color-btn-portfolio-hover);
   color: var(--secondary-color);
 }
 
